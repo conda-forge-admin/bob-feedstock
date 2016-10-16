@@ -10,7 +10,7 @@ source:
   md5: 1cfeeefa691814c88291ed64583559ce
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   script: python -B setup.py install --single-version-externally-managed --record record.txt
 
@@ -18,7 +18,7 @@ requirements:
   build:
     - python
     - setuptools
-    - libpng 1.6.22|1.6.24  # [osx]
+    - libpng >=1.6.23,<1.7  # [osx]
     - bob.extension ==2.3.1
     - bob.blitz ==2.0.10
     - bob.core ==2.1.4
@@ -53,7 +53,7 @@ requirements:
 
   run:
     - python
-    - libpng 1.6.22|1.6.24  # [osx]
+    - libpng >=1.6.23,<1.7  # [osx]
     - bob.extension ==2.3.1
     - bob.blitz ==2.0.10
     - bob.core ==2.1.4
